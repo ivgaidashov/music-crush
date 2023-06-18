@@ -16,7 +16,7 @@ const Header = () => {
           <Link to='/'>Rock</Link>
         </div>
         <div className='genre'>
-          <Link to='/'>Rap</Link>
+          <Link to='/'>Test</Link>
         </div>
       </div>
 
