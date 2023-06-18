@@ -1,6 +1,9 @@
 body {
+    max-width: 1280px;
+    margin: 0 auto;
     a {
         text-decoration: none;
+        color: black;
     }
 }
 
@@ -12,4 +15,27 @@ body {
 .blue-span {
     color:#00dcff
 
+}
+
+.blue-button{
+    background-color: #EA4C89;
+  border-radius: 8px;
+  border-style: none;
+  box-sizing: border-box;
+  color: #FFFFFF;
+  cursor: pointer;
+  font-size: 20px;
+  font-weight: 500;
+  height: 40px;
+  line-height: 20px;
+  list-style: none;
+  margin: 0;
+  outline: none;
+  padding: 10px 16px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  transition: all 100ms ease-in;;
+
+  &:hover {
+    transform: scale(1.05);
+}
 }
