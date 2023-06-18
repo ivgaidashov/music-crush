@@ -1,0 +1,8 @@
+.footer-wrapper {
+    display: grid;
+    min-height: 50px;
+    width: calc(100% - 200px);
+    border-top: 1px solid #282828;
+    margin: 0 auto;
+    grid-template-columns: 1fr 1fr;
+}
