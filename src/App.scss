@@ -1,3 +1,7 @@
+html {
+    background-color: #FDFDFD;
+}
+
 body {
     max-width: 1280px;
     margin: 0 auto;
@@ -7,18 +11,13 @@ body {
     }
 }
 
-.red-span {
-    color: #ff64a0
-
-}
-
-.blue-span {
-    color:#00dcff
+.yellow-span {
+    color: #FCC521
 
 }
 
 .blue-button{
-    background-color: #EA4C89;
+  background-color: #EA4C89;
   border-radius: 8px;
   border-style: none;
   box-sizing: border-box;
@@ -33,7 +32,7 @@ body {
   outline: none;
   padding: 10px 16px;
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-  transition: all 100ms ease-in;;
+  transition: all 100ms ease-in;
 
   &:hover {
     transform: scale(1.05);

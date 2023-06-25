@@ -20,7 +20,7 @@ const Header = () => {
         </div>
       </div>
 
-      <div className='logo'><span className='red-span'>M</span>usic <span className='blue-span'>C</span>rush</div>
+      <div className='logo'>Music Crush</div>
       
       <div className='links'>
         <div className='link'>
