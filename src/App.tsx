@@ -5,6 +5,7 @@ import './App.scss';
 import Header from './components/header/Header';
 import Footer from './components/footer/Footer';
 import Home from './pages/home/Home';
+import Categories from './pages/categories/Categories';
 
 const Layout = () => {
   return (
@@ -24,6 +25,10 @@ const router = createBrowserRouter([
       {
         path: '/',
         element: <Home/>
+      },
+      {
+        path: '/categories',
+        element: <Categories/>
       }
     ]
   }

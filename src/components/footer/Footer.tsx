@@ -4,13 +4,7 @@ import './footer.scss'
 const Footer = () => {
   return (
     <div className='footer-wrapper'>
-        <div className='left'>
-        1
-        </div>
-
-        <div className='right'>
-        2
-        </div>
+        <p>by <span>ivgaide.club</span></p>
     </div>
   )
 }
