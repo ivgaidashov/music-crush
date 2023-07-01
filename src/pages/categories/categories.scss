@@ -1,0 +1,13 @@
+.main-categories {
+    display: flex;
+    width: 100%;
+
+    
+    .filter {
+     width: 20%;
+    }
+
+    .categories-list {
+        width: 80%;
+    }
+}
