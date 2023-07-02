@@ -1,0 +1,110 @@
+.card {
+    width: 250px;
+    height: 100%;
+    border-radius: 10px;
+    display: inline-block;
+    margin: 0 5px;
+    position: relative;
+
+    .cover {
+        width: 100%;
+        height: 250px;
+        border-top-left-radius: 15px;
+        border-top-right-radius: 15px;
+        box-shadow: rgba(0, 0, 0, 0.5) 0px 3px 8px;
+        cursor: pointer;
+        transition: all 50ms ease-in-out;;
+
+        &:hover {
+            transform: scale(1.01);
+            box-shadow: rgba(0, 0, 0, 0.8) 0px 3px 8px;
+
+        }
+   
+        img {
+            width:100%;
+            object-fit: contain;
+            border-top-left-radius: 15px;
+            border-top-right-radius: 15px;
+            
+        }
+    }
+
+    .card-info{
+        display: flex;
+        flex-direction: column;
+        margin-top: 15px;
+        padding-bottom: 10px;
+        border: solid 1px white; 
+        border-bottom-left-radius: 15px;
+        border-bottom-right-radius: 15px;
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+        background-color: #FDFDFD;
+
+        .album-data, .price{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .album-data {
+            font-size: 18px; 
+        }
+
+        .artist, .discount {
+            padding-left: 5px;
+        }
+
+        .artist {
+            font-weight: 600;
+
+        }
+
+        .price {
+            margin-top: 10px;
+
+            .initial {
+                text-decoration: line-through;
+                margin-left: 10px;
+                font-size: 18px;
+            }
+
+            .discount {
+                padding: 5px 10px;
+                background-color: #ff64a0;
+                color: white;
+                border-radius: 15px;
+                font-size: 20px;
+                font-weight: 600;
+                box-shadow: rgba(0, 0, 0, 0.5) 0px 3px 8px;
+
+            }
+
+            .no-discount {
+                margin-top:5px;
+                font-size: 22px;
+                font-weight: 500;
+
+            }
+        }
+
+        .formats {
+            width:fit-content;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            padding: 5px 10px;
+            margin: 15px auto 0 auto;
+            border: solid 1px white;
+
+
+
+            .format  img{
+                height: 25px;
+                
+            }
+        }
+
+    }
+}
