@@ -1,10 +1,16 @@
 .main-categories {
     display: flex;
     width: 100%;
+    gap: 10px;
 
     
     .filter {
      width: 20%;
+     height: fit-content;
+     padding: 10px;
+     border-radius: 10px;
+     box-shadow: rgba(216, 204, 221, 0.5) 0px 3px 8px;
+    background-color: rgb(251, 248, 249);
     }
 
     .categories-list {

@@ -1,0 +1,86 @@
+.cart-wrapper {
+    position: relative;
+
+    .cart-main {
+        position:absolute;
+        top: 150%;
+        right: -40%;
+        width: 30rem;
+        max-height: 400px;
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        align-items: center;
+        z-index: 20;
+        background-color: #FFFFF7;
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+        border-radius: 15px;
+        overflow-y: auto;
+        overflow-x: hidden;
+        padding-bottom: 15px;
+        .item-wrapper{
+            width: 100%;
+            height: 150px;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: start;
+            padding-left: 30px;
+            padding-top: 15px;
+            padding-bottom: 10px;
+
+            .thumbnail{
+                width: 30%;
+                display: flex;
+                justify-content: center;
+                align-items:center;
+
+                img {
+                    width:90%;
+                    object-fit: contain;
+                    border-radius: 15px;
+                    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+
+                }
+            }
+            .format {
+                width: 25%;
+                height: 100%;
+                display: flex;
+                justify-content: center;
+                align-items:center;
+            }
+            .count-price{
+                width: 25%;
+                height: 100%;
+                display: flex;
+                justify-content: left;
+                align-items:center;
+            }
+        }
+    .total {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        font-size: 1.5rem;
+    }
+
+    &::-webkit-scrollbar {
+        width: 0 !important
+      }
+
+    .check-out {
+        max-width: 100px;
+        padding: 10px;
+        padding-top: 5px;
+        background-color: #ffa000;
+        color:#FFFFF7;
+        border-radius: 10px;
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+        cursor: pointer;
+    }
+    
+    }
+}

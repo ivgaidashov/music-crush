@@ -1,8 +1,8 @@
 import React from 'react'
 import './header.scss'
 import {Link} from 'react-router-dom'
-import {ShoppingBasket} from '@styled-icons/remix-line/ShoppingBasket'
 import {Heart} from '@styled-icons/bootstrap/Heart'
+import Cart from '../cart/Cart'
  
 const Header = () => {
   return (
@@ -10,17 +10,17 @@ const Header = () => {
       
       <div className='genres'>
         <div className='genre'>
-          <Link to='/'>Pop</Link>
+          <Link to='/categories?genre=Pop'>Pop</Link>
         </div>
         <div className='genre'>
-          <Link to='/'>Rock</Link>
+          <Link to='/categories?genre=Rock'>Rock</Link>
         </div>
         <div className='genre'>
-          <Link to='/'>Rap</Link>
+          <Link to='/categories?genre=Rap'>Rap</Link>
         </div>
       </div>
 
-      <div className='logo'>Music Crush</div>
+      <div className='logo'><Link to='/'>Music Crush</Link></div>
       
       <div className='links'>
         <div className='link'>
@@ -36,8 +36,7 @@ const Header = () => {
           <Link to='/'><Heart/></Link>
         </div>
         <div className='link icon'>
-          <Link to='/'><ShoppingBasket/>
-          <span>0</span></Link>
+          <Cart/>
         </div>
       </div>
     </div>

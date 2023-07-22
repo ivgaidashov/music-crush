@@ -6,6 +6,7 @@ import Header from './components/header/Header';
 import Footer from './components/footer/Footer';
 import Home from './pages/home/Home';
 import Categories from './pages/categories/Categories';
+import Item from './pages/item/Item';
 
 const Layout = () => {
   return (
@@ -29,7 +30,11 @@ const router = createBrowserRouter([
       {
         path: '/categories',
         element: <Categories/>
-      }
+      },
+      {
+        path: '/item/:id',
+        element: <Item/>
+      },
     ]
   }
 ])

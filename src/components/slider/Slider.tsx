@@ -8,6 +8,7 @@ import "./slider.scss";
 const Slider = () => {
   const banners = [
     {
+      id: 11,
       artist: "Lady Gaga",
       title: "Chromatica",
       img: "img/gaga.jpg",
@@ -15,6 +16,7 @@ const Slider = () => {
       color: "#C50035",
     },
     {
+      id: 22,
       artist: "Machine Gun Kelly",
       title: "Mainstream Sellout",
       img: "img/mgk.jpg",
@@ -22,6 +24,7 @@ const Slider = () => {
       color: "#C478BC",
     },
     {
+      id: 24,
       artist: "Cardi B",
       title: "Invasion of Privacy",
       img: "img/cardi.jpg",
@@ -48,7 +51,7 @@ const Slider = () => {
     <div className="slider">
       <div className="card">
         <div className="wrapper">
-          <Link to="/">
+          <Link to={`/item/${banners[currentCard].id}`}>
             <img src={banners[currentCard].img} alt="" />
           </Link>
           <div className="slider-icons">
@@ -65,12 +68,13 @@ const Slider = () => {
           </div>
 
           <p>{banners[currentCard].desc}</p>
+          <Link to={`/item/${banners[currentCard].id}`}>
           <button
             className="blue-button"
             style={{ backgroundColor: banners[currentCard].color }}
           >
             Order Now!
-          </button>
+          </button></Link>
         </div>
       </div>
     </div>
